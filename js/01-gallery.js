@@ -31,7 +31,6 @@ function onGalleryItemClick(event) {
     <img src="${event.target.dataset.source}" width="800" height="600">`,
     {onClose: (instance) => {
         window.removeEventListener("keydown", onEscPress);
-        window.removeEventListener("click", onGalleryItemClick);
     },
 })
     instance.show();
